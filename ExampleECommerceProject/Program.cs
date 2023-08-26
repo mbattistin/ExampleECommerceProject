@@ -1,4 +1,4 @@
-using ExampleECommerceProject.Data;
+using ExampleECommerceProject.Data.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

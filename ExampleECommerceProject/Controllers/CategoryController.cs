@@ -1,5 +1,5 @@
-﻿using ExampleECommerceProject.Data;
-using ExampleECommerceProject.Models;
+﻿using ExampleECommerceProject.Data.Data;
+using ExampleECommerceProject.Models.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExampleECommerceProject.Controllers

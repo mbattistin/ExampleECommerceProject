@@ -1,8 +1,9 @@
 ﻿using ExampleECommerceProject.Models;
+using ExampleECommerceProject.Models.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
-namespace ExampleECommerceProject.Data
+namespace ExampleECommerceProject.Data.Data
 {
     public class ApplicationDbContext:DbContext
     {
