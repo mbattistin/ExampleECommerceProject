@@ -16,7 +16,8 @@ namespace ExampleECommerceProject.Data.Repository
 		public void Add(T entity)
 		{
             _db.Set<T>().Add(entity);
-		}
+            _db.SaveChanges();
+        }
 
 		public T Get(Expression<Func<T, bool>> filter)
 		{
@@ -32,17 +33,19 @@ namespace ExampleECommerceProject.Data.Repository
 		public void Remove(T entity)
 		{
             _db.Set<T>().Remove(entity);
+            _db.SaveChanges();
         }
 
 		public void RemoveRange(IEnumerable<T> entities)
 		{
             _db.Set<T>().RemoveRange(entities);
-
+            _db.SaveChanges();
         }
 
 		public void Update(T entity)
 		{
             _db.Set<T>().Update(entity);
+            _db.SaveChanges();
         }
 	}
 }
