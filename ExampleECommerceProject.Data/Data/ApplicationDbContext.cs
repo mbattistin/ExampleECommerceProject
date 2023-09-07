@@ -1,5 +1,4 @@
-﻿using ExampleECommerceProject.Models;
-using ExampleECommerceProject.Models.Models;
+﻿using ExampleECommerceProject.Models.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -22,5 +21,7 @@ namespace ExampleECommerceProject.Data.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+
     }
 }
