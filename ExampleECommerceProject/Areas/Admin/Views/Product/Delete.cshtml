@@ -1,0 +1,44 @@
+﻿@model ExampleECommerceProject.Models.Models.Product
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary text-center">Delete Product</h2>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Book Title:</label>
+			<input asp-for="Title" type="text" class="form-control" disabled/>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Author:</label>
+			<input asp-for="Author" type="text" class="form-control" disabled/>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">ISBN:</label>
+			<input asp-for="ISBN" type="text" class="form-control" disabled/>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Description:</label>
+			<textarea asp-for="Description" type="text" class="form-control" rows="5" disabled></textarea>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Price List:</label>
+			<input asp-for="Price" type="number" class="form-control" disabled/>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Price for 50+:</label>
+			<input asp-for="Price50" type="number" class="form-control" disabled/>
+		</div>
+		<div class="row p-1">
+			<label class="p-1">Price for 100+:</label>
+			<input asp-for="Price100" type="number" class="form-control" disabled/>
+		</div>
+		<div class="row">
+			<div class="col-6 p-1">
+				<button type="submit" class="btn btn-primary form-control"><i class="bi bi-clipboard2-check"></i> Delete</button>
+			</div>
+			<div class="col-6 p-1">
+				<a asp-controller="Product" asp-action="Index" class="btn btn-secondary  form-control"><i class="bi bi-x-circle"></i> Cancel</a>
+			</div>
+		</div>
+	</div>
+</form>
